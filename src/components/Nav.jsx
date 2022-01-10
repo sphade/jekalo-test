@@ -31,25 +31,25 @@ function Nav() {
       >
               <Space size={50}>
                   <div className="flex">
-                  <HomeFilled style={{ color: "#45399d", fontSize: "30px" }} />
+                  <HomeFilled style={{ color: "#45399d", fontSize: "20px" }} />
                   <p style={{ color: "#45399d" }}>Home</p>
                   </div>
 
                   <div className="flex">
-                  <WalletOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "30px" }} />
+                  <WalletOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "20px" }} />
                   <p style={{ color: "rgb(172, 170, 170)" }}>Wallet</p>
                   </div>
         </Space>
               <Space size={50}>
               <div className="flex">
-              <BookOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "30px" }} />
+              <BookOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "20px" }} />
               <p style={{ color: "rgb(172, 170, 170)" }}>Resources</p>
                   </div>
                   
 
 
                   <div className="flex">
-                  <ProfileOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "30px" }} />
+                  <ProfileOutlined style={{ color: "rgb(172, 170, 170)", fontSize: "20px" }} />
                   <p style={{ color: "rgb(172, 170, 170)" }}>Profile</p>
                   </div>
         </Space>
