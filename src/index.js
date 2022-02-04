@@ -1,16 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import CharacterScreen from "./pages/CharacterScreen";
+import EpisodeScreen from "./pages/EpisodeScreen";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router } from "react-router-dom";
-import 'antd/dist/antd.css'
+import "./app.css";
 
 ReactDOM.render(
-  <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Router>,
+  <React.StrictMode>
+    <Router>
+      <nav className="navigation">
+        <Link className="links" to="/CharacterScreen">
+          Character Screen
+        </Link>
+        <Link className="links" to="/EpisodeScreen">
+          Episode Screen
+        </Link>
+      </nav>
+      <Switch>
+        <Route path="/CharacterScreen" component={CharacterScreen} />
+        <Route path="/EpisodeScreen" component={EpisodeScreen} />
+        <Route path="/" component={App} exact />
+      </Switch>
+    </Router>
+  </React.StrictMode>,
+
   document.getElementById("root")
 );
 

@@ -1,0 +1,28 @@
+.character {
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
+.characterCard {
+  width: 300px;
+  border: 1px solid;
+}
+.characterCard > img {
+  width: 100%;
+}
+.characterCard__info {
+  padding: 10px 15px;
+}
+@media screen and (max-width: 650px) {
+  .character {
+    margin-left: 100px;
+  }
+}
+.bold {
+  color: rgb(68, 67, 67);
+
+  font-weight: 700;
+}
